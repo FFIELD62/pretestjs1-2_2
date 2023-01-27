@@ -1,8 +1,8 @@
-function num(num){
-    const num1 = Math.floor(num/2) ;
-    const num2=  num-num1;
+function num(num) {
+    let num1 = Math.floor(num / 2);
+    let num2 = num - num1;
 
-    console.log (num1," , ",num2);
+    console.log(num1, " , ", num2);
 
 }
 

@@ -1,18 +1,24 @@
-function capToFront(char){
-    const strupper = [];
-    const strunder = [];
+function capToFront(char) {
+    strupper = "";
+    strunder = "";
 
-    for (let str1 of char) {
-        
-        if (ctype_upper(str1)) {
-            strupper += str1;
-        } else {
-            strunder += str1;
+    for (let index = 0; index < char.length; index++) {
+        // if (char[index] === char[index].toUpperCase()) {
+        //     strupper += char[index];
+        // } else strunder += char[index];
+
+        switch (char[index]) {
+            case char[index].toUpperCase():
+                strupper += char[index];
+                break;
+            default:
+                strunder += char[index];
         }
-    
-        console.log(strupper);
-        console.log(strunder);
     }
+
+    return console.log(strupper + strunder);
+
+
 
 }
 

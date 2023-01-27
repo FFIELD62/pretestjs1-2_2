@@ -1,12 +1,21 @@
-function highestDigit(num){
-    const greatestDigit = (num = 0, greatest = 0) => {
-        if(num){
-           const max = Math.max(num % 10, greatest);
-           return greatestDigit(Math.floor(num / 10), max);
-        };
-        return greatest;
-     };
-     console.log(greatestDigit(num));
+function highestDigit(num) {
+    //  const greatestDigit = (num = 0, greatest = 0) => {
+    //      if(num){
+    //         const max = Math.max(num % 10, greatest);
+    //         return greatestDigit(Math.floor(num / 10), max);
+    //      };
+    //      return greatest;
+    //   };
+    //   console.log(greatestDigit(num));
+
+
+
+    str = num.toString().split('');
+    let temp = str[0];
+
+
+
+
 }
 
 highestDigit(379);
