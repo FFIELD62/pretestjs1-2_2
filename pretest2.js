@@ -1,23 +1,19 @@
 function highestDigit(num) {
-    //  const greatestDigit = (num = 0, greatest = 0) => {
-    //      if(num){
-    //         const max = Math.max(num % 10, greatest);
-    //         return greatestDigit(Math.floor(num / 10), max);
-    //      };
-    //      return greatest;
-    //   };
-    //   console.log(greatestDigit(num));
+    let text = num.toString();
+    let num1 = [];
+    let sum = [];
+    let num2 = 0;
+    for (const str of text) {
+        num1.push(str);
+    }
 
-
-
-    str = num.toString().split('');
-    let temp = str[0];
-
-
-
-
+    for (let i = 0; i < num1.length; i++) {
+        num2 = parseInt(num1[i]);
+        sum = push(num2);
+    }
+    console.log(sum);
 }
 
-highestDigit(379);
-highestDigit(2);
-highestDigit(377401);
+highestDigit(379); //9
+//highestDigit(2); //2
+//highestDigit(377401); //7
