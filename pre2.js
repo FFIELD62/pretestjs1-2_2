@@ -10,9 +10,7 @@ function repeatString(char, num) {
     }
 
     console.log(str);
-
 }
-
 repeatString("Mubashir", 2);
 repeatString("Matt", 3);
 repeatString(1990, 7);

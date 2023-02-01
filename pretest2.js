@@ -1,19 +1,13 @@
-function highestDigit(num) {
-    let text = num.toString();
-    let num1 = [];
-    let sum = [];
-    let num2 = 0;
-    for (const str of text) {
-        num1.push(str);
+function highestDigit(digit) {
+    Str = digit.toString().split('');
+    let temp = Str[0];
+    for (let i = 0; i < Str.length; i++) {
+        if (temp < Str[i]) {
+            temp = Str[i];
+        }
     }
-
-    for (let i = 0; i < num1.length; i++) {
-        num2 = parseInt(num1[i]);
-        sum = push(num2);
-    }
-    console.log(sum);
+    console.log(temp);
 }
-
 highestDigit(379); //9
-//highestDigit(2); //2
-//highestDigit(377401); //7
+highestDigit(2); //2
+highestDigit(377401); //7

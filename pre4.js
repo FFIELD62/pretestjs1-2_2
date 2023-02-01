@@ -6,7 +6,6 @@ function tuckIn(...num) {
             sum.push(num[i][j]);
         }
     }
-
     sum.sort((a, b) => a - b);
     console.log(sum);
 }
